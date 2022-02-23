@@ -1,0 +1,16 @@
+# program to find minimum and maximum element in a list
+
+l=[]
+n=int(input("Enter the n:"))
+for i in range(0,n):
+    x=int(input())
+    l.append(x)
+min=l[0]   
+max=l[0]
+for i in range(1,n):
+    if l[i]>max:
+        max=l[i]
+    else:
+        min=l[i]
+print("maximum element in list is: ",max)
+print("minumum element in list is: ",min)
